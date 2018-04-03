@@ -1,0 +1,6 @@
+<button (click)="showDialog = !showDialog" class="btn">Open</button>
+
+<app-animation [(visible)]="showDialog">
+  <h1>Hello World</h1>
+  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+</app-animation>
