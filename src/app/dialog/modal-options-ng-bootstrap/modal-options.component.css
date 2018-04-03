@@ -1,0 +1,30 @@
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}
+
+.close{
+  color: #ffffff;
+  opacity: .8;
+}
+#confirm-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#confirm-footer .btn {
+  width: 100px;
+  border-radius: 8px;
+  background-color: #ee2f42;;
+}
+
+#confirm-header {
+  background-color: #404041;
+  color: #ffffff;
+}

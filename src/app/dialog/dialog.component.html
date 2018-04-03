@@ -4,3 +4,14 @@
   <h1>Hello World</h1>
   <button (click)="showDialog = !showDialog" class="btn">Close</button>
 </app-animation>
+<app-modal-options [title]="title" (yesAction)="yesAction()" [body]="bodyText" #confirm1></app-modal-options>
+<button (click)="showConfirm()">
+  click
+</button>
+
+<app-modal-confirm [title]="title" [message]="bodyText" #confirm2></app-modal-confirm>
+<button (click)="showConfirm2()">
+  click
+</button>
+<button (click)="showaaa()">show popup</button>
+<app-popup [dataPopup]="dataForPopup"></app-popup>

@@ -1,4 +1,4 @@
-<div [@dialog]  [ngClass]="{'active': visible}" class="dialog">
+<div [ngClass]="{'active': visible}" class="dialog">
   <ng-content></ng-content>
   <button *ngIf="closable" (click)="close()" aria-label="Close" class="dialog__close-btn">X</button>
 </div>

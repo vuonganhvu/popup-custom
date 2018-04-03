@@ -1,0 +1,16 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header" id="confirm-header">
+    <h4 class="modal-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" id="confirm-body">
+    <p>{{body}}</p>
+  </div>
+  <div class="modal-footer" id="confirm-foo">
+    <button type="button" class="btn btn-light" (click)="c('Close click')">{{btnNo}}</button>
+    <button type="button" class="btn btn-light" (click)="saveLog(); c('Close click')">{{btnYes}}</button>
+  </div>
+</ng-template>
+

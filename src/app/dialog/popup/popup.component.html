@@ -1,0 +1,15 @@
+<div class="popup-cover" *ngIf="dataPopup.showPopup">
+  <div class="popup-window" [ngClass]="{'active': dataPopup.active}">
+    <div class="popup-header">
+      Title in here
+      <span class="close" (click)="closePopup()">X</span>
+    </div>
+    <div class="popup-body">
+      Body in here
+    </div>
+    <div class="popup-bottom">
+      <button class="btn btn-primary">No</button>
+      <button class="btn btn-primary">Yes</button>
+    </div>
+  </div>
+</div>

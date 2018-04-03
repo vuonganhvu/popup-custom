@@ -4,18 +4,18 @@ import {animate, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-animation',
   templateUrl: './animation.component.html',
-  styleUrls: ['./animation.component.css'],
-  animations: [
-    trigger('dialog', [
-      transition('void => *', [
-        style({ transform: 'scale3d(.0, .0, .0)' }),
-        animate(100)
-      ]),
-      transition('* => void', [
-        animate(100, style({ transform: 'scale3d(.0, .0, .0)' }))
-      ])
-    ])
-  ]
+  styleUrls: ['./animation.component.css']
+  // animations: [
+  //   trigger('dialog', [
+  //     transition('void => *', [
+  //       style({ transform: 'scale3d(.0, .0, .0)' }),
+  //       animate(100)
+  //     ]),
+  //     transition('* => void', [
+  //       animate(100, style({ transform: 'scale3d(.0, .0, .0)' }))
+  //     ])
+  //   ])
+  // ]
 })
 export class AnimationComponent implements OnInit {
   @Input() closable = true;
